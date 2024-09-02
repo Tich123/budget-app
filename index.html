@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Personal Budget Tracker</title>
+
+  <link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+  <div class="container">
+
+    <h1>Budget Tracker</h1>
+
+    <div class="balance">
+
+      <h2>Total Remaining Money: $<span id="balance">0.00</span></h2>
+
+    </div>
+
+    <form id="transaction-form">
+
+      <div>
+
+        <label for="type">Type</label>
+
+        <select id="type" required>
+
+          <option value="income">Income</option>
+
+          <option value="expense">Expense</option>
+
+        </select>
+
+      </div>
+
+      <div>
+
+        <label for="text">Description</label>
+
+        <input type="text" id="text" required>
+
+      </div>
+
+      <div>
+
+        <label for="amount">Amount</label>
+
+        <input type="number" id="amount" required>
+
+      </div>
+
+      <button>Add Transaction</button>
+
+    </form>
+
+    <div class="transaction-tables">
+
+      <div>
+
+        <h3>Income</h3>
+
+        <table id="income-table">
+
+          <thead>
+
+            <tr>
+
+              <th>Description</th>
+
+              <th>Amount</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+        <p>Total Income: $<span id="income-total">0.00</span></p>
+
+      </div>
+
+      <div>
+
+        <h3>Expenses</h3>
+
+        <table id="expenses-table">
+
+          <thead>
+
+            <tr>
+
+              <th>Description</th>
+
+              <th>Amount</th>
+
+            </tr>
+
+          </thead>
+
+          <tbody>
+
+          </tbody>
+
+        </table>
+
+        <p>Total Expenses: $<span id="expenses-total">0.00</span></p>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+
+</html>
